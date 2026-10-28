@@ -1,0 +1,16 @@
+.env
+venv/
+outputs/superseded/
+voice_clips/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.zip
+.cache/
+*.faiss
+*.index
+
+# Explicitly allow sample_outputs to be tracked
+!sample_outputs/
+!sample_outputs/**
+.venv/
