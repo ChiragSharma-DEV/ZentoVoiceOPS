@@ -1,0 +1,33 @@
+# VoiceOps 2026: Voice Clip Mapping
+# Note: Customer scripts are UNCONFIRMED (guessed from transcript).
+
+Old Name: '25 Oct, 10.17 pm\u200b.aac'
+New Name: 01_pincode_verify.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "Hello, my order number is 69520867 and my pincode is 160017. Could you please tell me by what time my order will be delivered?"
+Raw ASR Transcript: hello my order number is six nine five two zero eight six seven and my pin code is one six zero zero one seven could you please tell me by what time my order will be delivered
+--------------------------------------------------
+Old Name: '25 Oct, 10.18 pm\u200b(2).aac'
+New Name: 02_damaged_compensation.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "I got the damaged product, so I want the 500 rupees compensation right now."
+Raw ASR Transcript: i got the damaged product so i want the five hundred rupees compensation right now
+--------------------------------------------------
+Old Name: '25 Oct, 10.18 pm\u200b.aac'
+New Name: 03_human_agent.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "Hello, I want to talk to a human agent."
+Raw ASR Transcript: hello i want to talk to a human agent
+--------------------------------------------------
+Old Name: 'hinglish.aac'
+New Name: 04_hinglish_return.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "Mujhe Pagecraft A5 Ruled Notebook lautane ke liye kitne din milenge?"
+Raw ASR Transcript: mujhe pagecraft a five rule notebook lutane ke liye kitne din milenge
+--------------------------------------------------
+Old Name: 'lookup and warrenty.aac'
+New Name: 05_sku_warranty.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "SKU ELE-0012 pe ZentroMart Assured hai kya and how can I take the claim for that?"
+Raw ASR Transcript: sku ele zero zero one two is zentomart issued he kya and how can i take the claim for that
+--------------------------------------------------
+Old Name: 'refund.aac'
+New Name: 06_credit_refund.aac
+Customer Script: UNCONFIRMED (guessed from transcript) - "Credit card wala refund 17 October 2026 ko shuru hua tha, but abhi tak mujhe koi refund nahi mila hai. Yeh kab tak ho jaayega refund?"
+Raw ASR Transcript: credit card vaala refund seventeen october twenty six ko shuru hua tha bat abhi tak mujhe koi refund nahi mila hai ye kab tak ho jaayega refund
+--------------------------------------------------

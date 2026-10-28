@@ -1,0 +1,990 @@
+# CONFIG: {"FIX1_CATEGORY_EXPANSION": true, "FIX4_WARRANTY_PROMPT": true, "FIX5_ASR_NORMALISE": false, "FIX6_TIMELINE_RANGE": true}
+id,split,question,decision,reply,used_sections,retrieved_top10,raw_output,finish_reason,truncated
+PQ0002,DEV,SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?,unparsed,,[],"[[""products.csv:ELE-0012"", 1.0], [""WAR-2"", 0.0378], [""WAR-1"", 0.0361], [""PLS-1"", 0.0346], [""MKS-3"", 0.0342], [""PLS-2"", 0.0334], [""DWM-4"", 0.0331], [""RET-1"", 0.0331], [""RET-3"", 0.033], [""PAY-4"", 0.032]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h16m9.425849303s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47769s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0004,DEV,Can I schedule a delivery at midnight?,unparsed,,[],"[[""CAN-3"", 0.0368], [""DEL-1"", 0.0356], [""CAN-2"", 0.0337], [""CAN-1"", 0.033], [""DEL-2"", 0.0318], [""PAY-2"", 0.0316], [""DEL-6"", 0.0315], [""DEL-3"", 0.0312], [""RET-8"", 0.0312], [""DEL-4"", 0.0311]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h16m4.359266122s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47764s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0006,DEV,"As a ZentroMart Plus member, will I be charged the pickup fee for returning shoes I just don't like?",unparsed,,[],"[[""RET-6"", 0.0373], [""PLS-2"", 0.0365], [""RET-7"", 0.0349], [""DEL-4"", 0.0346], [""PLS-1"", 0.0337], [""WAR-2"", 0.0331], [""PAY-4"", 0.0327], [""DEL-2"", 0.0321], [""MKS-2"", 0.0319], [""REF-1"", 0.0317]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m59.323163837s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47759s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0009,DEV,Is there a student discount?,unparsed,,[],"[[""REF-4"", 0.0365], [""PAY-2"", 0.0356], [""DEL-2"", 0.0356], [""DEL-4"", 0.035], [""PAY-4"", 0.035], [""RET-9"", 0.0332], [""REF-5"", 0.033], [""RET-6"", 0.0319], [""PLS-2"", 0.0317], [""PAY-3"", 0.0314]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m54.252620962s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47754s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0013,DEV,"मैंने Gulmohar Matte Lipstick खोल लिया है, क्या अब भी वापस कर सकती हूँ?",unparsed,,[],"[[""products.csv:BTY-0052"", 1.0], [""PAY-4"", 0.0355], [""FAQH-3"", 0.0328], [""FAQH-4"", 0.0328], [""RET-4"", 0.0325], [""MKS-2"", 0.0319], [""MKS-3"", 0.0318], [""FAQH-2"", 0.0316], [""RET-2"", 0.0314], [""RET-5"", 0.0312]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m49.225176469s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47749s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0015,DEV,Bulk order pe GST invoice milega kya?,unparsed,,[],"[[""MKS-1"", 0.0368], [""IDV-2"", 0.0343], [""CAN-1"", 0.0337], [""REF-4"", 0.0331], [""MKS-3"", 0.0324], [""CPN-1"", 0.032], [""TRK-1"", 0.0316], [""MKS-2"", 0.0312], [""CAN-2"", 0.031], [""TRK-2"", 0.0308]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m44.093989433s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47744s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0018,DEV,कितने दिन में वापस करना होगा?,unparsed,,[],"[[""RET-7"", 0.0326], [""RET-8"", 0.0325], [""FAQH-2"", 0.0317], [""RET-3"", 0.0316], [""DEL-1"", 0.0313], [""PAY-3"", 0.0313], [""DWM-4"", 0.0312], [""PLS-3"", 0.0311], [""PAY-4"", 0.0307], [""REF-3"", 0.0305]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m38.944998289s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47738s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0020,DEV,मुझे Sootra Canvas Tote Bag लौटाने के लिए कितने दिन मिलेंगे?,unparsed,,[],"[[""products.csv:FSH-0037"", 1.0], [""products.csv:FSH-0038"", 1.0], [""PAY-4"", 0.0346], [""RET-2"", 0.0335], [""RET-8"", 0.033], [""RET-7"", 0.0326], [""RET-6"", 0.0322], [""DEL-4"", 0.0318], [""DWM-4"", 0.0317], [""RET-4"", 0.0315]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m33.826656047s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47733s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0022,DEV,My refund to credit card was started on 17 October 2026. By which date should I have it?,unparsed,,[],"[[""PAY-3"", 0.0358], [""REF-5"", 0.0356], [""REF-2"", 0.0344], [""PAY-4"", 0.0338], [""REF-6"", 0.0337], [""CPN-2"", 0.0333], [""RET-8"", 0.0327], [""DEL-4"", 0.032], [""REF-1"", 0.032], [""PAY-1"", 0.0318]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m28.785686531s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47728s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0024,DEV,How long do I get to send back the Rangoli Cotton Straight Kurta?,unparsed,,[],"[[""products.csv:FSH-0026"", 1.0], [""DEL-4"", 0.0351], [""RET-3"", 0.0324], [""REF-2"", 0.0312], [""WAR-2"", 0.0311], [""RET-7"", 0.031], [""DEL-3"", 0.0308], [""RET-2"", 0.0304], [""DWM-4"", 0.0302], [""CAN-2"", 0.0302]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m23.606668239s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47723s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0026,DEV,"What warranty comes with the Voltra PowerCell 10000 mAh Power Bank, Green (SKU ELE-0008)?",unparsed,,[],"[[""products.csv:ELE-0008"", 1.0], [""products.csv:ELE-0009"", 1.0], [""WAR-1"", 0.0375], [""WAR-3"", 0.036], [""RET-3"", 0.0345], [""MKS-3"", 0.0338], [""TRB-4"", 0.0335], [""WAR-2"", 0.0332], [""TRB-3"", 0.0325], [""REF-6"", 0.0318]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m18.457016201s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47718s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0028,DEV,My refund to net banking was started on 14 October 2026. By which date should I have it?,unparsed,,[],"[[""PAY-3"", 0.0351], [""REF-5"", 0.0349], [""REF-2"", 0.0345], [""REF-6"", 0.0339], [""PAY-4"", 0.0336], [""PAY-1"", 0.033], [""RET-8"", 0.0319], [""REF-1"", 0.0317], [""REF-3"", 0.0315], [""CPN-2"", 0.0315]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m13.210026104s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47713s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0030,DEV,The Kestrel Book 14 Laptop (SKU ELE-0023) I received yesterday has a crack. I want it sorted.,unparsed,,[],"[[""products.csv:ELE-0023"", 1.0], [""products.csv:ELE-0022"", 1.0], [""RET-3"", 0.0353], [""TRB-2"", 0.0338], [""WAR-1"", 0.0332], [""TRB-4"", 0.0323], [""TRK-2"", 0.032], [""ESC-3"", 0.0318], [""TRB-3"", 0.0317], [""TRB-1"", 0.031]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m7.979736485s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47707s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0032,DEV,SKU ELE-0003 pe ZentroMart Assured hai kya? Claim kaise karein?,unparsed,,[],"[[""products.csv:ELE-0003"", 1.0], [""WAR-2"", 0.0378], [""WAR-1"", 0.0361], [""MKS-3"", 0.035], [""PLS-1"", 0.0346], [""RET-3"", 0.0334], [""DWM-4"", 0.0333], [""PLS-2"", 0.0332], [""RET-1"", 0.0331], [""PAY-4"", 0.0322]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h15m2.833418166s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47702s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0034,DEV,Can you deliver to Dubai?,unparsed,,[],"[[""DEL-5"", 0.036], [""CAN-2"", 0.034], [""CAN-3"", 0.0336], [""FAQ-5"", 0.0335], [""DEL-3"", 0.0332], [""DEL-6"", 0.0331], [""CAN-1"", 0.0331], [""DEL-1"", 0.0319], [""CAN-4"", 0.0316], [""PAY-4"", 0.0311]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m57.695596286s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47697s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0036,DEV,The Comfi One-piece Swimsuit doesn't fit. Can I send it back?,unparsed,,[],"[[""products.csv:INR-0067"", 1.0], [""products.csv:INR-0068"", 1.0], [""RET-5"", 0.0338], [""CAN-1"", 0.0334], [""PAY-4"", 0.0319], [""CAN-2"", 0.0317], [""DWM-5"", 0.0316], [""RET-6"", 0.0311], [""DWM-4"", 0.0306], [""RET-8"", 0.0303]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m50.957461339s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47690s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0039,DEV,The Comfi Cotton Briefs (Pack of 3) doesn't fit. Can I send it back?,unparsed,,[],"[[""products.csv:INR-0064"", 1.0], [""products.csv:INR-0065"", 1.0], [""RET-5"", 0.0357], [""RET-8"", 0.0328], [""RET-6"", 0.0327], [""PAY-4"", 0.0326], [""RVP-3"", 0.0308], [""RET-4"", 0.0305], [""RET-2"", 0.0301], [""RET-9"", 0.0301]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m42.980055694s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47682s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0041,DEV,"What warranty comes with the Nimbus X2 Pro Wireless Earbuds, Blue (SKU ELE-0003)?",unparsed,,[],"[[""products.csv:ELE-0003"", 1.0], [""WAR-1"", 0.0365], [""WAR-3"", 0.036], [""TRB-1"", 0.0348], [""RET-3"", 0.0338], [""WAR-2"", 0.0338], [""TRB-4"", 0.0335], [""MKS-3"", 0.0332], [""TRB-3"", 0.0319], [""RET-4"", 0.0317]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m37.951859558s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47677s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0044,DEV,मुझे Aangan Cotton Double Bedsheet Set लौटाने के लिए कितने दिन मिलेंगे?,unparsed,,[],"[[""products.csv:HOM-0045"", 1.0], [""products.csv:HOM-0046"", 1.0], [""RET-2"", 0.0358], [""DWM-4"", 0.0333], [""RET-8"", 0.0325], [""RET-3"", 0.0324], [""FAQH-3"", 0.0323], [""DEL-1"", 0.0319], [""RET-7"", 0.0312], [""FAQH-2"", 0.0304]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m32.91085601s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47672s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0046,DEV,The Kestrel Book 14 Laptop (SKU ELE-0022) I received yesterday has a crack. I want it sorted.,unparsed,,[],"[[""products.csv:ELE-0022"", 1.0], [""products.csv:ELE-0023"", 1.0], [""RET-3"", 0.0353], [""TRB-2"", 0.034], [""WAR-1"", 0.0334], [""TRB-4"", 0.0323], [""TRK-2"", 0.032], [""ESC-3"", 0.0316], [""TRB-3"", 0.0315], [""TRB-1"", 0.031]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m27.781912416s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47667s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0048,DEV,"मेरा सामान टूटा हुआ आया है, अब क्या करूँ?",unparsed,,[],"[[""PAY-3"", 0.0342], [""DWM-4"", 0.0333], [""PAY-4"", 0.0331], [""DWM-5"", 0.033], [""RET-5"", 0.0321], [""DWM-3"", 0.0318], [""RET-4"", 0.0315], [""FAQH-3"", 0.0315], [""RET-6"", 0.0311], [""DWM-2"", 0.0308]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m22.640228593s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47662s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0050,DEV,I paid cash on delivery and returned the item. How do I get my money back?,unparsed,,[],"[[""PAY-3"", 0.036], [""REF-5"", 0.0349], [""PAY-4"", 0.0343], [""REF-3"", 0.0335], [""PAY-2"", 0.0334], [""RET-6"", 0.0333], [""DEL-4"", 0.0333], [""PAY-1"", 0.033], [""REF-4"", 0.0324], [""REF-1"", 0.0323]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m17.500872896s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47657s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0052,DEV,"net banking wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",unparsed,,[],"[[""REF-6"", 0.0361], [""PAY-1"", 0.0351], [""RET-7"", 0.0346], [""REF-4"", 0.0344], [""REF-1"", 0.0341], [""RET-8"", 0.0336], [""PAY-4"", 0.0334], [""REF-2"", 0.0329], [""RET-9"", 0.0318], [""CPN-3"", 0.0309]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m11.988114966s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47651s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0054,DEV,"Sale mein 10 October ko order kiya tha (UrbanThread Slim Fit Jeans), return ke kitne din hain?",unparsed,,[],"[[""products.csv:FSH-0029"", 1.0], [""products.csv:FSH-0030"", 1.0], [""RET-8"", 0.0378], [""MKS-2"", 0.0339], [""RET-9"", 0.0339], [""RET-1"", 0.0328], [""RET-2"", 0.0325], [""DWM-4"", 0.0317], [""RET-3"", 0.0316], [""PLS-2"", 0.0309]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m6.821080158s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47646s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0057,DEV,Is it still ten days to return electronics like the Orbix Fit 3 Pro Smartwatch?,unparsed,,[],"[[""products.csv:ELE-0017"", 1.0], [""RET-3"", 0.0378], [""RET-2"", 0.036], [""DWM-4"", 0.0344], [""TRB-2"", 0.0338], [""REF-2"", 0.0326], [""TRB-1"", 0.0322], [""RET-4"", 0.0318], [""REF-3"", 0.0317], [""TRB-4"", 0.0312]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h14m1.76629313s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""model"": ""gemini-3.5-flash-lite"",
+              ""location"": ""global""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47641s""
+      }
+    ]
+  }
+}
+",ERROR,False
+PQ0059,DEV,My refund to UPI was started on 17 October 2026. By which date should I have it?,unparsed,,[],"[[""PAY-3"", 0.036], [""REF-5"", 0.0358], [""REF-2"", 0.0336], [""REF-6"", 0.0334], [""RET-8"", 0.0333], [""PAY-4"", 0.033], [""PAY-1"", 0.0324], [""REF-1"", 0.0324], [""CAN-1"", 0.0321], [""REF-3"", 0.0316]]","ERROR: HTTP 429 Quota Exceeded: {
+  ""error"": {
+    ""code"": 429,
+    ""message"": ""You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 500, model: gemini-3.5-flash-lite, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\nPlease retry in 13h13m56.67895361s."",
+    ""status"": ""RESOURCE_EXHAUSTED"",
+    ""details"": [
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.Help"",
+        ""links"": [
+          {
+            ""description"": ""Learn more about Gemini API quotas"",
+            ""url"": ""https://ai.google.dev/gemini-api/docs/rate-limits""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.QuotaFailure"",
+        ""violations"": [
+          {
+            ""description"": ""Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits."",
+            ""quotaMetric"": ""generativelanguage.googleapis.com/generate_content_free_tier_requests"",
+            ""quotaId"": ""GenerateRequestsPerDayPerProjectPerModel-FreeTier"",
+            ""quotaDimensions"": {
+              ""location"": ""global"",
+              ""model"": ""gemini-3.5-flash-lite""
+            },
+            ""quotaValue"": ""500""
+          }
+        ]
+      },
+      {
+        ""@type"": ""type.googleapis.com/google.rpc.RetryInfo"",
+        ""retryDelay"": ""47636s""
+      }
+    ]
+  }
+}
+",ERROR,False

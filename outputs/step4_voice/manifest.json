@@ -1,0 +1,92 @@
+{
+  "start_time": "2026-10-27T13:41:10+05:30",
+  "end_time": "2026-10-27T13:42:18+05:30",
+  "command": ".\\venv\\Scripts\\python.exe eval\\run_voice.py",
+  "run_live_gate": "RUN_LIVE=1",
+  "source_hashes": {
+    "src/conversation.py": "1A9438CCB44ECA09B4714276D3365F27CAD80CC410154695B23C2C1B223DBA8B",
+    "src/rag.py": "1892D53D298E1B562D8460B86CEE0880415540564BD83166F5C3A508073B5B0F",
+    "src/retrieval.py": "FA5CA8DC8BA21C2BCB4566AEAE09447102606E5F0FCD784F50F203137FBCB84F",
+    "src/llm.py": "404E8200C40B94597B64AD65309AEB7001E86A59F532886004AF8A2ADF28C1D1",
+    "src/order_tools.py": "5D45275B28BF2330EF848B5593319AAA86B65AA0318B7A7FA26766C7823D2283"
+  },
+  "production_defaults": {
+    "agent": "src.conversation.ConversationAgent",
+    "answer_adapter": "default rag_answer_adapter",
+    "retriever": "one shared HybridRetriever(use_query_rewrite=False)",
+    "top_k": 10,
+    "enable_rewrite": false,
+    "input_modality": "voice",
+    "stt_language": "en-IN",
+    "tts_voice": "Kaveri",
+    "tts_model": "timbre-v2.5",
+    "hinglish_tts_language": "auto"
+  },
+  "api_calls_by_service": {
+    "gemini": 0,
+    "gemini_quota_errors": 0,
+    "gnani_stt": 6,
+    "gnani_tts": 6,
+    "gnani_total": 12
+  },
+  "rate_limiting": {
+    "min_gemini_interval_seconds": 4.5,
+    "quota_retry_seconds": 65,
+    "max_quota_retries": 3
+  },
+  "clips": [
+    {
+      "name": "01_pincode_verify",
+      "tts_language_requested": "en-IN",
+      "expected_decision": null,
+      "expected_source": "none in dataset"
+    },
+    {
+      "name": "02_damaged_compensation",
+      "tts_language_requested": "hinglish",
+      "expected_decision": "refuse",
+      "expected_source": "conversations.csv PC015 T4 / PC016 T4 (compensation_demand)"
+    },
+    {
+      "name": "03_human_agent",
+      "tts_language_requested": "en-IN",
+      "expected_decision": "escalate",
+      "expected_source": "conversations.csv PC005 T4 (human request)"
+    },
+    {
+      "name": "04_hinglish_return",
+      "tts_language_requested": "hinglish",
+      "expected_decision": "answer",
+      "expected_source": "questions.csv PQ0014"
+    },
+    {
+      "name": "05_sku_warranty",
+      "tts_language_requested": "hinglish",
+      "expected_decision": "answer",
+      "expected_source": "questions.csv PQ0002"
+    },
+    {
+      "name": "06_credit_refund",
+      "tts_language_requested": "hinglish",
+      "expected_decision": "answer",
+      "expected_source": "questions.csv PQ0008 / PQ0022"
+    }
+  ],
+  "counts": {
+    "clips": 6,
+    "pass": 1,
+    "stt_errors": 0,
+    "tts_errors": 0,
+    "decision_errors": 5
+  },
+  "dataset_tools_folder": {
+    "path": "E:\\D drive data\\projects\\Capstone project\\Capstone_Project_Dataset_FTTT_2026\\Capstone_Project_Dataset_FTTT_2026\\tools",
+    "files": [
+      "__init__.py",
+      "tools.py"
+    ],
+    "only_tools_py_and_init": true
+  },
+  "ticket_log_redirected_to": "outputs/step4_voice/tickets_created.csv",
+  "instrumentation": "src.rag.answer_question wrapped only to record is_asr and retrieved_items; all calls delegated to the real function."
+}
