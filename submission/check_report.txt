@@ -6,7 +6,7 @@ Mode: offline; no LLM/Gemini/Gnani calls; no git commands
 PASS    1. Required files and folders: README.md, .env.example, requirements.txt, run.py, src/, sample_outputs/
 PASS    1. report.pdf: present
 MISSING 1. demo.mp4: not present yet (user must add it)
-PASS    2. Secrets: local .env present, ignored, excluded from zip; no secret patterns in 145 scanned text file(s); 36 ignored file(s) skipped
+PASS    2. Secrets: local .env present, ignored, excluded from zip; no secret patterns in 145 scanned text file(s); 37 ignored file(s) skipped
 PASS    3. .env.example empty values: 5 variable(s), all values empty
 PASS    4. Third-party imports: all 113 import statement(s) classified; third-party: dotenv, faiss, gnani, numpy, pandas, rank_bm25, requests, sentence_transformers
 PASS    4b. google-genai requirement: google-genai not declared and 0 google.genai imports in src/ and run.py; src/llm.py calls the Gemini REST endpoint with requests, so the SDK is unused
@@ -16,7 +16,7 @@ PASS    5b. README commands: python run.py step1 -> branch 'step1' at run.py:20;
 INFO    5c. README eval/run_voice.py: README.md documents 'python eval/run_voice.py'; eval/run_voice.py has no required argparse positionals and reads the default clip folder
 PASS    5d. Documented command arguments: no documented eval command with required positional arguments
 PASS    6. sample_outputs: Step 2, Step 3 and 6 voice sample(s); no [STUB]
-PASS    7. Zip contents: Kaizeen_voiceops.zip has no .env and no venv/ (83 entries); .env absent confirmed
+PASS    7. Zip contents: Kaizeen_voiceops.zip has no .env and no venv/ (197 entries); .env absent confirmed
 PASS    8. .gitignore sample outputs: sample_outputs/example.wav would NOT be ignored
 PASS    9. Absolute paths: no Windows drive-letter or /home/, /Users/ paths in src/, run.py, README.md, .env.example
 
