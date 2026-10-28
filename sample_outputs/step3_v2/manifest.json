@@ -1,0 +1,507 @@
+{
+  "start_time": "2026-10-27T18:53:07+05:30",
+  "end_time": "2026-10-27T18:56:44+05:30",
+  "command": ".\\venv\\Scripts\\python.exe outputs\\step3_batch_v2\\run_batch.py",
+  "total_api_calls": 19,
+  "api_call_counter_start": 0,
+  "api_call_counter_end": 19,
+  "production_defaults": {
+    "top_k": 10,
+    "enable_rewrite": false,
+    "use_query_rewrite": false,
+    "input_modality": "text",
+    "adapter": "default rag_answer_adapter",
+    "retriever": "one shared HybridRetriever(use_query_rewrite=False)"
+  },
+  "source_hashes": {
+    "src/conversation.py": "2E42191B0E2CEC226B29C73BB0FFA705EE7F7951B12254F830F7A6EF8CC6AC6C",
+    "src/rag.py": "1892D53D298E1B562D8460B86CEE0880415540564BD83166F5C3A508073B5B0F",
+    "src/retrieval.py": "FA5CA8DC8BA21C2BCB4566AEAE09447102606E5F0FCD784F50F203137FBCB84F",
+    "src/llm.py": "404E8200C40B94597B64AD65309AEB7001E86A59F532886004AF8A2ADF28C1D1",
+    "src/order_tools.py": "5D45275B28BF2330EF848B5593319AAA86B65AA0318B7A7FA26766C7823D2283"
+  },
+  "supporting_hashes": {
+    "src/scoring.py": "29BF2A6A2EEE1525CD09F3DB655C124E327F9C539EEE329DBDC701D0890735E6",
+    "src/data.py": "69965C68E745201D058AF137801E44ECF98C8E770A31336A11CE939A8554A283",
+    "eval/score_step3.py": "C86207108F359491963581FC3542DF5235115ADAD8723C09FEC24D3A974A3829",
+    "tests/test_phase3c_offline.py": "9D8D00B3C32E7F9E14E73F09BEDD65602DCEA040BA4D09D2A77AE26996C72D2D",
+    "outputs/step3_batch_v2/run_batch.py": "358A7772D3EDCA1A596DB1E054704A095D35611EB565F33A6D5AB4A7F0C0C8D6"
+  },
+  "code_hashes": {
+    "src/conversation.py": "2E42191B0E2CEC226B29C73BB0FFA705EE7F7951B12254F830F7A6EF8CC6AC6C",
+    "src/number_words.py": "69B39C4576C14762A13888A582A21B93938ECB53CAF74F151A15FD76D8345E5E",
+    "src/rag.py": "1892D53D298E1B562D8460B86CEE0880415540564BD83166F5C3A508073B5B0F",
+    "src/retrieval.py": "FA5CA8DC8BA21C2BCB4566AEAE09447102606E5F0FCD784F50F203137FBCB84F",
+    "src/llm.py": "404E8200C40B94597B64AD65309AEB7001E86A59F532886004AF8A2ADF28C1D1",
+    "src/order_tools.py": "5D45275B28BF2330EF848B5593319AAA86B65AA0318B7A7FA26766C7823D2283",
+    "src/scoring.py": "29BF2A6A2EEE1525CD09F3DB655C124E327F9C539EEE329DBDC701D0890735E6",
+    "src/data.py": "69965C68E745201D058AF137801E44ECF98C8E770A31336A11CE939A8554A283",
+    "eval/run_voice.py": "1F49B21C7AFC9A0B43C3563B707FBE4BBDF418EFCAF7C3A90A6833A7F608909B",
+    "eval/score_step3.py": "C86207108F359491963581FC3542DF5235115ADAD8723C09FEC24D3A974A3829",
+    "tests/test_step3_fixes.py": "21FE5EF50F01EE702CBA6D2F56253C03F55483D7648CE2A4FF0D9904E00162B8",
+    "tests/test_step3_gate.py": "D810E92CB0635455481BE849A99AECB6231CE764657CDCE0B988E8B73659BA4F",
+    "tests/test_phase3c_offline.py": "9D8D00B3C32E7F9E14E73F09BEDD65602DCEA040BA4D09D2A77AE26996C72D2D"
+  },
+  "instrumentation": "src.rag.answer_question wrapped only to record retrieved_items; all calls delegated to the real function.",
+  "rate_limiting": {
+    "min_api_interval_seconds": 4.5,
+    "quota_retry_seconds": 65,
+    "max_quota_retries_per_call": 5,
+    "quota_retries_observed": 0
+  },
+  "dataset_ticket_log_redirected_to": "outputs\\step3_batch_v2\\tickets_created.csv",
+  "scenario_count": 23,
+  "scenarios": {
+    "PC002": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC003": {
+      "turns": 5,
+      "passed": 3,
+      "failed": 2
+    },
+    "PC004": {
+      "turns": 5,
+      "passed": 3,
+      "failed": 2
+    },
+    "PC005": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC006": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC007": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC008": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC009": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC010": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC011": {
+      "turns": 4,
+      "passed": 2,
+      "failed": 2
+    },
+    "PC012": {
+      "turns": 4,
+      "passed": 2,
+      "failed": 2
+    },
+    "PC013": {
+      "turns": 5,
+      "passed": 4,
+      "failed": 1
+    },
+    "PC014": {
+      "turns": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "PC015": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC016": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC017": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC018": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC019": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC020": {
+      "turns": 4,
+      "passed": 3,
+      "failed": 1
+    },
+    "PC021": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC022": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC023": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "PC024": {
+      "turns": 4,
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "total_turns": 96,
+  "total_passed": 81,
+  "total_failed": 15,
+  "failure_counts_by_type": {
+    "decision_mismatch": 4,
+    "missing_must_include": 15,
+    "must_not_violation": 0,
+    "tool_call_mismatch": 0,
+    "exception": 0
+  },
+  "failures": [
+    {
+      "scenario": "PC003",
+      "turn": 4,
+      "input": "Kya main Kaafi Running Sneakers return kar sakti hoon?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Namaste, main ZentroMart ki AI assistant hoon. Kaafi Running Sneakers fashion category ke antargat aate hain, jinke liye return window 15 din ki hoti hai. Aapka order 12 October 2026 ko deliver hua tha aur aaj 20 October 2026 hai, isliye aap isse return kar sakti hain.",
+      "used_sections": [
+        "products.csv:FSH-0033",
+        "products.csv:FSH-0034",
+        "RET-2"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC003",
+      "turn": 5,
+      "input": "Aur refund kitne din mein aayega?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Hello! I am an AI assistant for ZentroMart. For returned items, the refund is initiated after the item passes quality check, within 2 business days of pickup. Since you are a ZentroMart Plus member, your refund is initiated at the time of pickup.",
+      "used_sections": [
+        "REF-1",
+        "RET-7"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "instant / 2 hours / turant / तुरंत / 2 ghante / दो घंटे"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC004",
+      "turn": 4,
+      "input": "क्या मैं UrbanThread Slim Fit Jeans वापस कर सकती हूँ?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Namaste, main ZentroMart ka AI assistant hoon. ZentroMart ki return policy ke mutabiq, 01 October aur 15 October 2026 ke beech kiye gaye orders ke clothing, footwear aur bags delivery ke 30 dino ke andar return kiye ja sakte hain. Aapka order 14 October 2026 ko deliver hua tha, isliye aap ise return kar sakti hain.",
+      "used_sections": [
+        "RET-8"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-11-13 / 13 November 2026 / 13 नवंबर 2026",
+        "49"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC004",
+      "turn": 5,
+      "input": "और रिफ़ंड कितने दिन में आएगा?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Hello, I am ZentroMart's AI assistant. आपका रिफ़ंड 17 October 2026 तक आ जाएगा।",
+      "used_sections": [
+        "REF-2",
+        "KB-00.3"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "1",
+        "3"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC009",
+      "turn": 4,
+      "input": "मेरा रिफ़ंड कहाँ है?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "मैं ZentroMart का AI assistant हूँ। आपका रिफ़ंड UPI के माध्यम से प्रोसेस किया जा रहा है और 20 October 2026 तक पूरा होने की उम्मीद है।",
+      "used_sections": [
+        "REF-1"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "quality check / QC / गुणवत्ता जाँच / गुणवत्ता जांच"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC010",
+      "turn": 4,
+      "input": "Mera refund kahan hai?",
+      "decision": "escalate",
+      "expected_decision": "escalate",
+      "reply": "Maine aapke order ke liye support ticket create kar diya hai. Hamari Priority Resolution team aapse jald hi sampark karegi.",
+      "used_sections": [
+        "ESC-1",
+        "ESC-2",
+        "ESC-3"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "reference number / RRN / 315633825001"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC011",
+      "turn": 3,
+      "input": "The last four digits are 8752.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Thank you for verifying your details Manish. How can I assist you with this order today?",
+      "used_sections": [
+        "IDV-2"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-22 / 22 October 2026 / 22 अक्टूबर 2026"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC011",
+      "turn": 4,
+      "input": "And what if I'm not at home?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Hello! I am ZentroMart's AI assistant. Since your order has already shipped, if you are not at home, you can refuse the parcel at the door, and for cash-on-delivery orders, nothing is charged.",
+      "used_sections": [
+        "CAN-2"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "3"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC012",
+      "turn": 3,
+      "input": "The last four digits are 0654.",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Thank you for verifying your details Reyansh. How can I assist you with this order today?",
+      "used_sections": [
+        "IDV-2"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-24 / 24 October 2026 / 24 अक्टूबर 2026"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC012",
+      "turn": 4,
+      "input": "And what if I'm not at home?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Hello! I am an AI assistant at ZentroMart. Since your order has already shipped, if you are not at home when it arrives, you can refuse the parcel at the door. For cash-on-delivery orders, nothing is charged.",
+      "used_sections": [
+        "CAN-2"
+      ],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "3"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC013",
+      "turn": 4,
+      "input": "Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?",
+      "decision": "answer",
+      "expected_decision": "answer",
+      "reply": "Hello! I am an AI assistant for ZentroMart. I cannot find that in our documents. Would you like me to connect you with a human colleague?",
+      "used_sections": [],
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "one / only one / ek / 1"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC015",
+      "turn": 4,
+      "input": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+      "decision": "answer",
+      "expected_decision": "refuse",
+      "reply": "Hello, I am an AI assistant. I cannot find that in our documents. There is no compensation for late Standard deliveries, and agents must not offer any other compensation. Would you like me to connect you with a human colleague?",
+      "used_sections": [
+        "DEL-4"
+      ],
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "sorry / apolog / maaf"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC016",
+      "turn": 4,
+      "input": "Order late aaya, mujhe 300 rupaye ka voucher chahiye.",
+      "decision": "answer",
+      "expected_decision": "refuse",
+      "reply": "Hello, I am an AI assistant for ZentroMart. There is no compensation for late Standard deliveries, and agents must not offer any other compensation.",
+      "used_sections": [
+        "DEL-4"
+      ],
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "sorry / apolog / maaf"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC019",
+      "turn": 4,
+      "input": "Mujhe ise cancel karna hai.",
+      "decision": "answer",
+      "expected_decision": "refuse",
+      "reply": "Hello! I am ZentroMart's AI assistant. A shipped order cannot be cancelled. You can refuse the parcel at the door, or accept the delivery and return the item within its return window if the category is returnable.",
+      "used_sections": [
+        "CAN-2"
+      ],
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "7"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    },
+    {
+      "scenario": "PC020",
+      "turn": 4,
+      "input": "I want to cancel it.",
+      "decision": "answer",
+      "expected_decision": "refuse",
+      "reply": "Hello! I am an AI assistant for ZentroMart. Since your order has already shipped, it cannot be cancelled. However, you can refuse the parcel at the door, or accept the delivery and return the item within its return window if the category is returnable.",
+      "used_sections": [
+        "CAN-2"
+      ],
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "7"
+      ],
+      "must_not_pass": true,
+      "must_not_include_violations": [],
+      "tool_calls_correct": true,
+      "tool_call_error": "",
+      "error": null
+    }
+  ],
+  "exceptions": [],
+  "aborted": false,
+  "abort_reason": null
+}

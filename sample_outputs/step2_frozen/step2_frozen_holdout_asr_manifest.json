@@ -1,0 +1,50 @@
+{
+  "run": "HOLDOUT ASR frozen",
+  "working_directory": "E:\\D drive data\\projects\\Capstone project\\voiceops",
+  "command": "$start = Get-Date; & .\\venv\\Scripts\\python.exe eval\\run_step2.py asr_text HOLDOUT outputs/step2_frozen_holdout_asr.csv *>&1 | Tee-Object -FilePath 'outputs\\step2_frozen_holdout_asr.log' -Append; $end = Get-Date; \"RUN_START=$($start.ToString('o'))\" | Tee-Object -FilePath 'outputs\\step2_frozen_holdout_asr.log' -Append; \"RUN_END=$($end.ToString('o'))\" | Tee-Object -FilePath 'outputs\\step2_frozen_holdout_asr.log' -Append; \"RUN_START=$($start.ToString('o'))\"; \"RUN_END=$($end.ToString('o'))\"",
+  "execution_note": "First invocation timed out at row 22 after 420000 ms; 21 rows were already written. The same runner was resumed for rows 22-26 with log append. No source edits.",
+  "start_time": "2026-10-26T18:15:13+05:30",
+  "end_time": "2026-10-26T18:25:11.2157157+05:30",
+  "output_file": "E:\\D drive data\\projects\\Capstone project\\voiceops\\outputs\\step2_frozen_holdout_asr.csv",
+  "config_dump": {
+    "input_column": "asr_text",
+    "split": "HOLDOUT",
+    "fix1_category_expansion": false,
+    "fix1_sku_guard": false,
+    "fix4_warranty_prompt": false,
+    "fix5_asr_normalise": true,
+    "fix6_timeline_range": false,
+    "modality_gate": {
+      "is_asr": true,
+      "fix5_application_gate": "FIX5_ASR_NORMALISE and is_asr",
+      "fix5_would_apply": true
+    }
+  },
+  "config_dump_source": "CONFIG_DUMP line printed by eval/run_step2.py in both invocations",
+  "api_call_count": 26,
+  "api_call_count_source": "21 completed calls before the timeout plus 5 calls on the resumed run; the final log prints 5 for the resumed segment",
+  "parse": {
+    "rows_expected": 26,
+    "rows_written": 26,
+    "parse_ok": 26,
+    "parse_failures": 0,
+    "unparsed": 0
+  },
+  "truncation": {
+    "truncated": 0
+  },
+  "must_not_include": {
+    "violations": 0
+  },
+  "log_file": "outputs/step2_frozen_holdout_asr.log",
+  "prompt_file": "src/rag.py",
+  "prompt_source": "src/rag.py contains BASE_SYSTEM_PROMPT and get_system_prompt(); there is no separate prompt file",
+  "hashes": {
+    "eval/run_step2.py": "7EDEA6D782F41074035C5ACFB4B086D7506D4E80347E060CB63FCC8C7EE69F88",
+    "src/rag.py": "1892D53D298E1B562D8460B86CEE0880415540564BD83166F5C3A508073B5B0F",
+    "src/scoring.py": "29BF2A6A2EEE1525CD09F3DB655C124E327F9C539EEE329DBDC701D0890735E6",
+    "src/retrieval.py": "FA5CA8DC8BA21C2BCB4566AEAE09447102606E5F0FCD784F50F203137FBCB84F",
+    "src/llm.py": "404E8200C40B94597B64AD65309AEB7001E86A59F532886004AF8A2ADF28C1D1"
+  },
+  "hash_method": "Get-FileHash -Algorithm SHA256"
+}

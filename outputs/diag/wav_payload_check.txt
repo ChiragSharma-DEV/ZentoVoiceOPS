@@ -1,0 +1,13 @@
+R1 WAV payload check
+source_file: outputs/superseded/voice/05_sku_warranty/reply.wav
+copy_file: outputs/diag/05_sku_warranty_reply_copy.wav
+data_chunk_offset: 44
+total_length_before: 721964
+total_length_after: 721964
+riff_size_before: 0xFFFFFFFF (4294967295)
+riff_size_after: 0x000B0424 (721956)
+data_size_before: 0xFFFFFFFF (4294967295)
+data_size_after: 0x000B0400 (721920)
+data_sha256_before: f54f1effcca4ace8561c9931d61f9d5198c962709c00d2afe62d549283ded6db
+data_sha256_after: f54f1effcca4ace8561c9931d61f9d5198c962709c00d2afe62d549283ded6db
+equal: yes

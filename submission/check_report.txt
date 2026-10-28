@@ -1,0 +1,207 @@
+VoiceOps 2026 submission check
+Repo: E:/D drive data/projects/Capstone project/voiceops
+Expected zip: Kaizeen_voiceops.zip
+Mode: offline; no LLM/Gemini/Gnani calls; no git commands
+------------------------------------------------------------------------
+PASS    1. Required files and folders: README.md, .env.example, requirements.txt, run.py, src/, sample_outputs/
+PASS    1. report.pdf: present
+MISSING 1. demo.mp4: not present yet (user must add it)
+PASS    2. Secrets: local .env present, ignored, excluded from zip; no secret patterns in 145 scanned text file(s); 36 ignored file(s) skipped
+PASS    3. .env.example empty values: 5 variable(s), all values empty
+PASS    4. Third-party imports: all 113 import statement(s) classified; third-party: dotenv, faiss, gnani, numpy, pandas, rank_bm25, requests, sentence_transformers
+PASS    4b. google-genai requirement: google-genai not declared and 0 google.genai imports in src/ and run.py; src/llm.py calls the Gemini REST endpoint with requests, so the SDK is unused
+INFO    4c. Dataset tools package: voiceops/tools/ exists: no; tools.tools maps to <DATASET_DIR>/tools/tools.py; not added to requirements
+PASS    5. README structure: all six headings present; run.py voice <folder> documented
+PASS    5b. README commands: python run.py step1 -> branch 'step1' at run.py:20; python run.py voice -> branch 'voice' at run.py:22; voice branch hardcodes agent_name="stub" (plumbing only)
+INFO    5c. README eval/run_voice.py: README.md documents 'python eval/run_voice.py'; eval/run_voice.py has no required argparse positionals and reads the default clip folder
+PASS    5d. Documented command arguments: no documented eval command with required positional arguments
+PASS    6. sample_outputs: Step 2, Step 3 and 6 voice sample(s); no [STUB]
+PASS    7. Zip contents: Kaizeen_voiceops.zip has no .env and no venv/ (83 entries); .env absent confirmed
+PASS    8. .gitignore sample outputs: sample_outputs/example.wav would NOT be ignored
+PASS    9. Absolute paths: no Windows drive-letter or /home/, /Users/ paths in src/, run.py, README.md, .env.example
+
+APPENDIX A - IMPORTS IN src/ AND run.py
+FILE:LINE  STATEMENT  MODULE  REQUIREMENTS MAPPING
+run.py:3  import sys                                  -> stdlib (Python)
+run.py:4  from   pathlib                              -> stdlib (Python)
+run.py:11  from   src.baseline                         -> repo module (not in requirements)
+run.py:23  from   eval.run_voice                       -> repo module (not in requirements)
+src/agent_protocol.py:7  from   __future__                           -> stdlib directive
+src/agent_protocol.py:9  from   typing                               -> stdlib (Python)
+src/agent_stub.py:9  from   __future__                           -> stdlib directive
+src/agent_stub.py:11  from   typing                               -> stdlib (Python)
+src/agent_stub.py:12  from   src.agent_protocol                   -> repo module (not in requirements)
+src/asr_normalise.py:7  from   __future__                           -> stdlib directive
+src/asr_normalise.py:8  import re                                   -> stdlib (Python)
+src/baseline.py:3  from   __future__                           -> stdlib directive
+src/baseline.py:4  from   concurrent.futures                   -> stdlib (Python)
+src/baseline.py:5  import csv                                  -> stdlib (Python)
+src/baseline.py:6  from   datetime                             -> stdlib (Python)
+src/baseline.py:7  import json                                 -> stdlib (Python)
+src/baseline.py:8  import logging                              -> stdlib (Python)
+src/baseline.py:9  import os                                   -> stdlib (Python)
+src/baseline.py:10  from   pathlib                              -> stdlib (Python)
+src/baseline.py:11  import re                                   -> stdlib (Python)
+src/baseline.py:12  from   typing                               -> stdlib (Python)
+src/baseline.py:14  from   src.data                             -> repo module (not in requirements)
+src/baseline.py:15  from   src.llm                              -> repo module (not in requirements)
+src/baseline.py:127  import time                                 -> stdlib (Python)
+src/conversation.py:7  from   __future__                           -> stdlib directive
+src/conversation.py:9  import inspect                              -> stdlib (Python)
+src/conversation.py:10  import logging                              -> stdlib (Python)
+src/conversation.py:11  import re                                   -> stdlib (Python)
+src/conversation.py:12  from   dataclasses                          -> stdlib (Python)
+src/conversation.py:13  from   datetime                             -> stdlib (Python)
+src/conversation.py:14  from   typing                               -> stdlib (Python)
+src/conversation.py:16  from   src.data                             -> repo module (not in requirements)
+src/conversation.py:24  from   src.number_words                     -> repo module (not in requirements)
+src/conversation.py:25  from   src.order_tools                      -> repo module (not in requirements)
+src/conversation.py:60  from   src.kb                               -> repo module (not in requirements)
+src/conversation.py:477  from   src.rag                              -> repo module (not in requirements)
+src/conversation.py:551  from   src.retrieval                        -> repo module (not in requirements)
+src/data.py:3  from   __future__                           -> stdlib directive
+src/data.py:4  import os                                   -> stdlib (Python)
+src/data.py:5  from   datetime                             -> stdlib (Python)
+src/data.py:6  from   pathlib                              -> stdlib (Python)
+src/data.py:7  from   typing                               -> stdlib (Python)
+src/data.py:8  import pandas                               -> pandas (requirements.txt:2)
+src/data.py:9  from   dotenv                               -> python-dotenv (requirements.txt:1)
+src/kb.py:3  from   __future__                           -> stdlib directive
+src/kb.py:4  import os                                   -> stdlib (Python)
+src/kb.py:5  import re                                   -> stdlib (Python)
+src/kb.py:6  from   dataclasses                          -> stdlib (Python)
+src/kb.py:7  from   datetime                             -> stdlib (Python)
+src/kb.py:8  from   pathlib                              -> stdlib (Python)
+src/kb.py:9  from   typing                               -> stdlib (Python)
+src/kb.py:11  from   dotenv                               -> python-dotenv (requirements.txt:1)
+src/kb.py:221  from   src.data                             -> repo module (not in requirements)
+src/llm.py:6  from   __future__                           -> stdlib directive
+src/llm.py:7  import logging                              -> stdlib (Python)
+src/llm.py:8  import os                                   -> stdlib (Python)
+src/llm.py:9  from   pathlib                              -> stdlib (Python)
+src/llm.py:10  from   typing                               -> stdlib (Python)
+src/llm.py:11  import time                                 -> stdlib (Python)
+src/llm.py:12  import requests                             -> requests (requirements.txt:3)
+src/llm.py:13  from   dotenv                               -> python-dotenv (requirements.txt:1)
+src/number_words.py:8  from   __future__                           -> stdlib directive
+src/number_words.py:10  import re                                   -> stdlib (Python)
+src/order_tools.py:7  from   __future__                           -> stdlib directive
+src/order_tools.py:9  import sys                                  -> stdlib (Python)
+src/order_tools.py:10  from   pathlib                              -> stdlib (Python)
+src/order_tools.py:11  from   typing                               -> stdlib (Python)
+src/order_tools.py:14  from   src.data                             -> repo module (not in requirements)
+src/order_tools.py:22  from   tools.tools                          -> dataset runtime package <DATASET_DIR>/tools (NOT in requirements by design)
+src/order_tools.py:23  from   tools.tools                          -> dataset runtime package <DATASET_DIR>/tools (NOT in requirements by design)
+src/rag.py:7  from   __future__                           -> stdlib directive
+src/rag.py:8  import json                                 -> stdlib (Python)
+src/rag.py:9  import os                                   -> stdlib (Python)
+src/rag.py:10  import re                                   -> stdlib (Python)
+src/rag.py:11  from   datetime                             -> stdlib (Python)
+src/rag.py:12  from   typing                               -> stdlib (Python)
+src/rag.py:14  from   src.kb                               -> repo module (not in requirements)
+src/rag.py:15  from   src.retrieval                        -> repo module (not in requirements)
+src/rag.py:16  from   src.llm                              -> repo module (not in requirements)
+src/rag.py:17  from   src.baseline                         -> repo module (not in requirements)
+src/retrieval.py:3  from   __future__                           -> stdlib directive
+src/retrieval.py:4  import math                                 -> stdlib (Python)
+src/retrieval.py:5  import os                                   -> stdlib (Python)
+src/retrieval.py:6  import re                                   -> stdlib (Python)
+src/retrieval.py:7  from   typing                               -> stdlib (Python)
+src/retrieval.py:9  import numpy                                -> numpy (requirements-step2.txt:4)
+src/retrieval.py:12  import faiss                                -> faiss-cpu (requirements-step2.txt:3)
+src/retrieval.py:17  from   sentence_transformers                -> sentence-transformers (requirements-step2.txt:1)
+src/retrieval.py:22  from   rank_bm25                            -> rank-bm25 (requirements-step2.txt:2)
+src/retrieval.py:26  from   src.kb                               -> repo module (not in requirements)
+src/retrieval.py:27  from   src.data                             -> repo module (not in requirements)
+src/retrieval.py:28  from   src.asr_normalise                    -> repo module (not in requirements)
+src/retrieval.py:64  from   src.data                             -> repo module (not in requirements)
+src/retrieval.py:127  from   src.llm                              -> repo module (not in requirements)
+src/scoring.py:3  from   __future__                           -> stdlib directive
+src/scoring.py:4  import json                                 -> stdlib (Python)
+src/scoring.py:5  import re                                   -> stdlib (Python)
+src/scoring.py:6  from   datetime                             -> stdlib (Python)
+src/scoring.py:7  from   pathlib                              -> stdlib (Python)
+src/scoring.py:8  from   typing                               -> stdlib (Python)
+src/voice.py:7  from   __future__                           -> stdlib directive
+src/voice.py:9  import logging                              -> stdlib (Python)
+src/voice.py:10  import os                                   -> stdlib (Python)
+src/voice.py:11  import re                                   -> stdlib (Python)
+src/voice.py:12  import time                                 -> stdlib (Python)
+src/voice.py:13  import wave                                 -> stdlib (Python)
+src/voice.py:14  from   pathlib                              -> stdlib (Python)
+src/voice.py:15  from   typing                               -> stdlib (Python)
+src/voice.py:17  from   dotenv                               -> python-dotenv (requirements.txt:1)
+src/voice.py:24  from   gnani.stt                            -> gnani-vachana (requirements-voice.txt:1)
+src/voice.py:25  from   gnani.tts                            -> gnani-vachana (requirements-voice.txt:1)
+src/voice.py:26  from   gnani.tts.client                     -> gnani-vachana (requirements-voice.txt:1)
+src/voice.py:27  from   src.agent_protocol                   -> repo module (not in requirements)
+
+APPENDIX B - RUNTIME PATHS (grep of src/ and run.py)
+SOURCE | PATH EXPRESSION | RESOLVED ABSOLUTE PATH | CLASS | ZIP-RESOLVABLE
+src/data.py:12 | .env | E:/D drive data/projects/Capstone project/voiceops/.env | (a) inside repo | N/A (optional; .env excluded by .gitignore)
+src/data.py:18-23 | os.getenv("DATASET_DIR") | <DATASET_DIR> (external; value redacted, setting DATASET_DIR) | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:30 | DATASET_DIR / rel_path | <DATASET_DIR>/<rel_path> | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:36 | data/customers.csv | <DATASET_DIR>/data/customers.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:37 | data/orders.csv | <DATASET_DIR>/data/orders.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:38 | data/order_items.csv | <DATASET_DIR>/data/order_items.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:39 | data/products.csv | <DATASET_DIR>/data/products.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:40 | data/pincodes.csv | <DATASET_DIR>/data/pincodes.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:41 | data/holidays.csv | <DATASET_DIR>/data/holidays.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:42 | data/support_logs.csv | <DATASET_DIR>/data/support_logs.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:43 | practice/questions.csv | <DATASET_DIR>/practice/questions.csv | (b) configured external directory (DATASET_DIR) | NO
+src/data.py:44 | practice/conversations.csv | <DATASET_DIR>/practice/conversations.csv | (b) configured external directory (DATASET_DIR) | NO
+src/kb.py:126-133 | Path(dataset_dir) / "kb" | <DATASET_DIR>/kb/*.md | (b) configured external directory (DATASET_DIR) | NO
+src/order_tools.py:17-23 | DATASET_DIR/tools/tools.py | <DATASET_DIR>/tools/tools.py | (b) configured external directory (DATASET_DIR) | NO; repo/tools/ exists: no
+src/baseline.py:17-18 | outputs/step1_results.csv | E:/D drive data/projects/Capstone project/voiceops/outputs/step1_results.csv | (a) inside repo | YES (created at runtime; outputs/ not in zip payload)
+run.py:24 | voice_clips (default folder) | E:/D drive data/projects/Capstone project/voiceops/voice_clips | (a) inside repo | YES (created at runtime; voice_clips/ not in zip payload)
+src/voice.py:20-22 | .env | E:/D drive data/projects/Capstone project/voiceops/.env | (a) inside repo | N/A (optional; .env excluded by .gitignore)
+src/voice.py:287-289 | out_dir / reply.wav | E:/D drive data/projects/Capstone project/voiceops/outputs/voice/<clip>/reply.wav | (a) inside repo | YES (created at runtime; outputs/ not in zip payload)
+src/voice.py:104 | audio_path | caller-supplied (README command: voice_clips/<clip>) | (a) inside repo for the documented command | YES (input folder; not in zip payload)
+src/llm.py:16 | .env | E:/D drive data/projects/Capstone project/voiceops/.env | (a) inside repo | N/A (optional; .env excluded by .gitignore)
+src/kb.py:13 | load_dotenv() | E:/D drive data/projects/Capstone project/voiceops/.env when cwd=repo | (a) inside repo | N/A (optional; .env excluded by .gitignore)
+
+GREP COVERAGE (src/ and run.py):
+- kb: 24 hit(s) (src/conversation.py=8, src/kb.py=10, src/rag.py=3, src/retrieval.py=3)
+- data: 78 hit(s) (src/agent_stub.py=1, src/baseline.py=1, src/conversation.py=21, src/data.py=21, src/kb.py=12, src/llm.py=3, src/order_tools.py=14, src/rag.py=2, src/retrieval.py=3)
+- tools: 11 hit(s) (src/baseline.py=1, src/conversation.py=1, src/order_tools.py=9)
+- practice: 3 hit(s) (src/baseline.py=1, src/data.py=2)
+- products.csv: 7 hit(s) (src/conversation.py=1, src/data.py=1, src/retrieval.py=5)
+- holidays.csv: 4 hit(s) (src/data.py=2, src/rag.py=2)
+- faiss: 14 hit(s) (src/retrieval.py=14)
+- absolute filesystem paths (check 9): none (the only absolute URL is https://... at src/llm.py:51; not a filesystem path)
+
+NON-PATH GREP NOTES:
+- products.csv: only src/data.py:39 loads the file; src/retrieval.py:158,164,165,177 and src/conversation.py:40 use section IDs/metadata.
+- holidays.csv: only src/data.py:41 loads the file; src/rag.py:128,138 are prompt text; src/data.py:93 is a docstring.
+- faiss: src/retrieval.py imports and uses the Python package/index; it is not a filesystem path. Dependency: faiss-cpu (requirements-step2.txt:3).
+- practice: src/data.py:43-44 are the real loads; src/baseline.py:126 is a docstring.
+- tools: src/order_tools.py imports tools.tools from DATASET_DIR; it is not a repo path and is not a requirements entry.
+- kb: src/kb.py:126-133 and :141 are the real path/glob operations; other hits are identifiers/docstrings.
+
+APPENDIX C - ZIP SPEC AND UNRESOLVABLE PATHS
+Declared zip payload:
+- README.md: present
+- .env.example: present
+- requirements.txt: present
+- run.py: present
+- src/: present
+- report.pdf: present
+- demo.mp4: MISSING
+- sample_outputs/: present
+
+Runtime paths a clean copy of the zip could not resolve:
+- <DATASET_DIR>/data/customers.csv
+- <DATASET_DIR>/data/orders.csv
+- <DATASET_DIR>/data/order_items.csv
+- <DATASET_DIR>/data/products.csv
+- <DATASET_DIR>/data/pincodes.csv
+- <DATASET_DIR>/data/holidays.csv
+- <DATASET_DIR>/data/support_logs.csv
+- <DATASET_DIR>/practice/questions.csv
+- <DATASET_DIR>/practice/conversations.csv
+- <DATASET_DIR>/kb/*.md
+- <DATASET_DIR>/tools/tools.py
+
+Reason: .env.example leaves DATASET_DIR empty; the dataset (data/, practice/, kb/, tools/) is outside the repo and outside the zip; repo/tools/ does not exist. report.pdf and demo.mp4 are missing payload items, not runtime paths.
+------------------------------------------------------------------------
+RESULT: OK | 13 passed, 0 failed, 1 missing

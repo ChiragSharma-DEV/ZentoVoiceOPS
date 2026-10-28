@@ -1,0 +1,944 @@
+{
+  "metrics": {
+    "rows_run": 52,
+    "decision_correct": 15,
+    "decision_correct_pct": 28.85,
+    "must_include_pass": 8,
+    "must_include_pass_pct": 15.38,
+    "must_not_include_violations": 0,
+    "answerable_false_flags": 0,
+    "unparsed": 0,
+    "truncated": 0
+  },
+  "details": [
+    {
+      "id": "PQ0002",
+      "question": "SKU ELE-0012 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "12",
+        "My Orders / app"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0003",
+      "question": "How fast are refunds to the ZentroMart Wallet?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "instant / 2 hours / two hours / तुरंत / turant"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0004",
+      "question": "Can I schedule a delivery at midnight?",
+      "decision": "answer",
+      "acceptable_decisions": "answer ; escalate",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": false,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0005",
+      "question": "SKU ELE-0002 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "12",
+        "My Orders / app"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0006",
+      "question": "As a ZentroMart Plus member, will I be charged the pickup fee for returning shoes I just don't like?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "no / not / waived / free"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0008",
+      "question": "credit card wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0009",
+      "question": "Is there a student discount?",
+      "decision": "answer",
+      "acceptable_decisions": "answer ; escalate",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": false,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0010",
+      "question": "Is the collection free if the UrbanThread Slim Fit Jeans came torn?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0013",
+      "question": "मैंने Gulmohar Matte Lipstick खोल लिया है, क्या अब भी वापस कर सकती हूँ?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "सील / seal / बंद / खुला"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0014",
+      "question": "मुझे Pagecraft A5 Ruled Notebook (Pack of 4) लौटाने के लिए कितने दिन मिलेंगे?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "10"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0015",
+      "question": "Bulk order pe GST invoice milega kya?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer ; escalate",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी"
+      ],
+      "must_not_include_violations": [],
+      "answerable": false,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0016",
+      "question": "I opened the Neelam Eau de Parfum 50 ml and tried it once. Can I still return it?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "unopened / seal / sealed"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0018",
+      "question": "कितने दिन में वापस करना होगा?",
+      "decision": "clarify",
+      "acceptable_decisions": "clarify",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0019",
+      "question": "My Orbix Fit 3 Pro Smartwatch was delivered on 20 July. What was the return window for it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "10"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0020",
+      "question": "मुझे Sootra Canvas Tote Bag लौटाने के लिए कितने दिन मिलेंगे?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "15"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0021",
+      "question": "What happens if I'm not home when the courier comes?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "3"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0022",
+      "question": "My refund to credit card was started on 17 October 2026. By which date should I have it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-27 / 27 October 2026 / 27 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0023",
+      "question": "There's an order on my account that I never placed.",
+      "decision": "escalate",
+      "acceptable_decisions": "escalate",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0024",
+      "question": "How long do I get to send back the Rangoli Cotton Straight Kurta?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "15"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0025",
+      "question": "If I paid with net banking, how soon will the refund show up?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "3",
+        "5"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0026",
+      "question": "What warranty comes with the Voltra PowerCell 10000 mAh Power Bank, Green (SKU ELE-0008)?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "12"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0027",
+      "question": "UPI wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-15 / 15 October 2026 / 15 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0028",
+      "question": "My refund to net banking was started on 14 October 2026. By which date should I have it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-21 / 21 October 2026 / 21 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0029",
+      "question": "credit card wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-21 / 21 October 2026 / 21 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0030",
+      "question": "The Kestrel Book 14 Laptop (SKU ELE-0023) I received yesterday has a crack. I want it sorted.",
+      "decision": "clarify",
+      "acceptable_decisions": "escalate",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "ticket / colleague / team / Priority Resolution"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0031",
+      "question": "My Bluetooth speaker won't turn on at all.",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "30",
+        "10"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0032",
+      "question": "SKU ELE-0003 pe ZentroMart Assured hai kya? Claim kaise karein?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "12",
+        "My Orders / app"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0033",
+      "question": "My refund to net banking was started on 17 October 2026. By which date should I have it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-24 / 24 October 2026 / 24 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0034",
+      "question": "Can you deliver to Dubai?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "only within India / only in India / India"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0035",
+      "question": "net banking wala refund 12 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-17 / 17 October 2026 / 17 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0036",
+      "question": "The Comfi One-piece Swimsuit doesn't fit. Can I send it back?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "cannot / can't / not returnable / non-returnable / नहीं / nahi / nahin / not be returned"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0037",
+      "question": "क्या आपकी कोई दुकान कोच्चि में है?",
+      "decision": "answer",
+      "acceptable_decisions": "answer ; escalate",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी"
+      ],
+      "must_not_include_violations": [],
+      "answerable": false,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0039",
+      "question": "The Comfi Cotton Briefs (Pack of 3) doesn't fit. Can I send it back?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "cannot / can't / not returnable / non-returnable / नहीं / nahi / nahin / not be returned"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0040",
+      "question": "ऑर्डर शिप हो गया है, क्या अब कैंसिल हो सकता है?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "मना / refuse / नहीं"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0041",
+      "question": "What warranty comes with the Nimbus X2 Pro Wireless Earbuds, Blue (SKU ELE-0003)?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "12"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0042",
+      "question": "My order is already on its way. Can I still stop it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "refuse / decline / reject"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0044",
+      "question": "मुझे Aangan Cotton Double Bedsheet Set लौटाने के लिए कितने दिन मिलेंगे?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "10"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0045",
+      "question": "How long does a refund to UPI take?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "1",
+        "3"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0046",
+      "question": "The Kestrel Book 14 Laptop (SKU ELE-0022) I received yesterday has a crack. I want it sorted.",
+      "decision": "clarify",
+      "acceptable_decisions": "escalate",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "ticket / colleague / team / Priority Resolution"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0047",
+      "question": "My express order arrived a day late. Do I get anything back?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "79",
+        "wallet / ZentroMart Wallet"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0048",
+      "question": "मेरा सामान टूटा हुआ आया है, अब क्या करूँ?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "48"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0049",
+      "question": "I bought the Rangoli Cotton Straight Kurta in the sale on 5 October. How long can I return it?",
+      "decision": "escalate",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "30"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0050",
+      "question": "I paid cash on delivery and returned the item. How do I get my money back?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "ZentroMart Wallet / wallet",
+        "5",
+        "7"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0051",
+      "question": "When will my refund come?",
+      "decision": "clarify",
+      "acceptable_decisions": "clarify",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0052",
+      "question": "net banking wala refund 17 October 2026 ko shuru hua, kab tak aa jaana chahiye?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-24 / 24 October 2026 / 24 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0053",
+      "question": "Can I pick up my order from a store near me?",
+      "decision": "answer",
+      "acceptable_decisions": "answer ; escalate",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "don't have / do not have / not sure / no information / can't find / not able to find / couldn't find / जानकारी नहीं / pata nahi / jaankari nahi / connect / सहयोगी"
+      ],
+      "must_not_include_violations": [],
+      "answerable": false,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0054",
+      "question": "Sale mein 10 October ko order kiya tha (UrbanThread Slim Fit Jeans), return ke kitne din hain?",
+      "decision": "answer",
+      "acceptable_decisions": "answer",
+      "decision_correct": true,
+      "must_include_pass": false,
+      "missing_facts": [
+        "30"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0056",
+      "question": "I bought the Sootra Canvas Tote Bag in the sale on 5 October. How long can I return it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "30"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0057",
+      "question": "Is it still ten days to return electronics like the Orbix Fit 3 Pro Smartwatch?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "7"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0058",
+      "question": "Mera order (Kestrel K7 Smartphone 256 GB) parso deliver hua, kitne din tak return kar sakti hoon?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0059",
+      "question": "My refund to UPI was started on 17 October 2026. By which date should I have it?",
+      "decision": "clarify",
+      "acceptable_decisions": "answer",
+      "decision_correct": false,
+      "must_include_pass": false,
+      "missing_facts": [
+        "2026-10-22 / 22 October 2026 / 22 अक्टूबर 2026"
+      ],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    },
+    {
+      "id": "PQ0060",
+      "question": "Tell me the phone number of the person who ordered to my building yesterday.",
+      "decision": "refuse",
+      "acceptable_decisions": "refuse",
+      "decision_correct": true,
+      "must_include_pass": true,
+      "missing_facts": [],
+      "must_not_include_violations": [],
+      "answerable": true,
+      "answerable_false_flagged": false,
+      "flag_reasons": [],
+      "unparsed": false,
+      "finish_reason": "STOP",
+      "truncated": false
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "start_time": "2026-10-27T18:58:01+05:30",
+  "end_time": "2026-10-27T18:58:28+05:30",
+  "command": ".\\venv\\Scripts\\python.exe outputs\\step4_voice_v2\\launch_voice_v2.py",
+  "run_live_gate": "RUN_LIVE=1",
+  "source_hashes": {
+    "src/conversation.py": "2E42191B0E2CEC226B29C73BB0FFA705EE7F7951B12254F830F7A6EF8CC6AC6C",
+    "src/rag.py": "1892D53D298E1B562D8460B86CEE0880415540564BD83166F5C3A508073B5B0F",
+    "src/retrieval.py": "FA5CA8DC8BA21C2BCB4566AEAE09447102606E5F0FCD784F50F203137FBCB84F",
+    "src/llm.py": "404E8200C40B94597B64AD65309AEB7001E86A59F532886004AF8A2ADF28C1D1",
+    "src/order_tools.py": "5D45275B28BF2330EF848B5593319AAA86B65AA0318B7A7FA26766C7823D2283"
+  },
+  "production_defaults": {
+    "agent": "src.conversation.ConversationAgent",
+    "answer_adapter": "default rag_answer_adapter",
+    "retriever": "one shared HybridRetriever(use_query_rewrite=False)",
+    "top_k": 10,
+    "enable_rewrite": false,
+    "input_modality": "voice",
+    "stt_language": "en-IN",
+    "tts_voice": "Kaveri",
+    "tts_model": "timbre-v2.5",
+    "hinglish_tts_language": "auto"
+  },
+  "api_calls_by_service": {
+    "gemini": 0,
+    "gemini_quota_errors": 0,
+    "gnani_stt": 6,
+    "gnani_tts": 6,
+    "gnani_total": 12
+  },
+  "rate_limiting": {
+    "min_gemini_interval_seconds": 4.5,
+    "quota_retry_seconds": 65,
+    "max_quota_retries": 3
+  },
+  "clips": [
+    {
+      "name": "01_pincode_verify",
+      "tts_language_requested": "en-IN",
+      "setup_turns": [
+        {
+          "text": "Hello, I need help with an order.",
+          "input_modality": "text"
+        },
+        {
+          "text": "My order number is 69520867.",
+          "input_modality": "text"
+        }
+      ],
+      "expected_decision": "answer",
+      "expected_source": "IDV-2 verification of order 69520867 with clip pincode 160017",
+      "checks": {
+        "order_id": "69520867",
+        "verified": true
+      }
+    },
+    {
+      "name": "02_damaged_compensation",
+      "tts_language_requested": "hinglish",
+      "setup_turns": [],
+      "expected_decision": null,
+      "expected_source": "no valid row; PC015/PC016 T4 do not match this damaged-compensation demand",
+      "checks": null
+    },
+    {
+      "name": "03_human_agent",
+      "tts_language_requested": "en-IN",
+      "setup_turns": [
+        {
+          "text": "Hi, I need some help with an order.",
+          "input_modality": "text"
+        },
+        {
+          "text": "The order number is 6649 2475.",
+          "input_modality": "text"
+        },
+        {
+          "text": "The last four digits are 6073.",
+          "input_modality": "text"
+        }
+      ],
+      "expected_decision": "escalate",
+      "expected_source": "conversations.csv PC006 T1-T3 replayed as text; clip is T4 (human request)",
+      "checks": null
+    },
+    {
+      "name": "04_hinglish_return",
+      "tts_language_requested": "hinglish",
+      "setup_turns": [],
+      "expected_decision": "answer",
+      "expected_source": "outputs/step2_frozen_holdout_text.csv PQ0014 (single turn)",
+      "checks": null
+    },
+    {
+      "name": "05_sku_warranty",
+      "tts_language_requested": "hinglish",
+      "setup_turns": [],
+      "expected_decision": "answer",
+      "expected_source": "outputs/step2_frozen_dev_asr.csv PQ0002 (single turn)",
+      "checks": null
+    },
+    {
+      "name": "06_credit_refund",
+      "tts_language_requested": "hinglish",
+      "setup_turns": [],
+      "expected_decision": "answer",
+      "expected_source": "outputs/step2_frozen_holdout_text.csv PQ0008 (single turn)",
+      "checks": null
+    }
+  ],
+  "counts": {
+    "clips": 6,
+    "pass": 3,
+    "stt_errors": 0,
+    "tts_errors": 0,
+    "decision_errors": 3,
+    "state_check_errors": 0
+  },
+  "dataset_tools_folder": {
+    "path": "E:\\D drive data\\projects\\Capstone project\\Capstone_Project_Dataset_FTTT_2026\\Capstone_Project_Dataset_FTTT_2026\\tools",
+    "files": [
+      "__init__.py",
+      "tools.py"
+    ],
+    "only_tools_py_and_init": true
+  },
+  "ticket_log_redirected_to": "outputs/step4_voice_v2/tickets_created.csv",
+  "instrumentation": "src.rag.answer_question wrapped only to record is_asr and retrieved_items; all calls delegated to the real function."
+}

@@ -1,0 +1,72 @@
+PC013 T4 recorded batch records
+v1_file: outputs/step3_batch/transcripts.jsonl
+v2_file: outputs/step3_batch_v2/transcripts.jsonl
+
+recorded_input (identical in both):
+Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?
+
+composed_question_note: the transcripts store only the customer input; the adapter-composed text below is reconstructed from that input and the v1/v2 verified-order block (no retrieval was re-run).
+
+composed_question_v1:
+<<<
+Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?
+
+VERIFIED ORDER FACTS:
+- payment_method: upi
+- delivery_date: 2026-10-15
+- status: delivered
+- is_plus: unknown
+- item_categories: electronics
+>>>
+
+composed_question_v2:
+<<<
+Theek hai. Ek aur sawaal: agle order pe do coupon laga sakta hoon?
+
+VERIFIED ORDER FACTS:
+- payment_method: upi
+- delivery_date: 2026-10-15
+- shipped_on: 2026-10-09
+- status: delivered
+- is_plus: unknown
+- item_categories: electronics
+>>>
+
+question_text_differs: yes
+diff: v2 inserts '- shipped_on: 2026-10-09' immediately after '- delivery_date: 2026-10-15'. The recorded customer input is identical; v1 has no shipped_on line.
+
+v1_record:
+retrieved_items_ids_in_order:
+1. PAY-1
+2. REF-4
+3. CAN-1
+4. CAN-2
+5. REF-1
+6. PAY-2
+7. CPN-1
+8. REF-5
+9. RET-3
+10. CPN-2
+CPN-1_present: yes
+CPN-2_present: yes
+used_sections: ['CPN-1']
+decision: answer
+reply: Hello! I am ZentroMart's AI assistant. Main aapko bata doon ki ek order par sirf ek hi coupon apply kiya ja sakta hai. Coupons ko combine nahi kiya ja sakta.
+
+v2_record:
+retrieved_items_ids_in_order:
+1. PAY-2
+2. PAY-1
+3. CAN-1
+4. REF-4
+5. REF-1
+6. RET-3
+7. REF-5
+8. CAN-2
+9. PAY-3
+10. DEL-4
+CPN-1_present: no
+CPN-2_present: no
+used_sections: []
+decision: answer
+reply: Hello! I am an AI assistant for ZentroMart. I cannot find that in our documents. Would you like me to connect you with a human colleague?

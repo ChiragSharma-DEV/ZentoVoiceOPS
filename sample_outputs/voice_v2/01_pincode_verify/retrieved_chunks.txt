@@ -1,0 +1,3 @@
+rag_called: false
+used_sections: IDV-2
+retrieved_chunk_ids: none
