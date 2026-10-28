@@ -1,0 +1,97 @@
+id,claim,found_in_used_sections,section_found
+PQ0002,Yes (affirmative response),yes,products.csv:ELE-0012
+PQ0002,SKU ELE-0012,yes,products.csv:ELE-0012
+PQ0002,Policy: ZentroMart Assured,yes,products.csv:ELE-0012
+PQ0002,Procedure: claim via My Orders in app,yes,WAR-2
+PQ0003,Duration: 2 hours,yes,REF-2
+PQ0003,Duration: instant / 2 hours,yes,REF-2
+PQ0003,Policy: ZentroMart Wallet,yes,REF-2
+PQ0004,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0005,Yes (affirmative response),yes,products.csv:ELE-0002
+PQ0005,SKU ELE-0002,yes,products.csv:ELE-0002
+PQ0005,Policy: ZentroMart Assured,yes,products.csv:ELE-0002
+PQ0005,Procedure: claim via My Orders in app,yes,WAR-2
+PQ0006,will not be charged reverse pickup fee,yes,RET-6
+PQ0006,Policy: ZentroMart Plus,yes,RET-6
+PQ0006,Service: reverse pickup,yes,RET-6
+PQ0008,Date: 17 October 2026,yes,REF-2
+PQ0008,Date: 27 October 2026,yes,REF-2
+PQ0008,Duration: 7 business days,yes,REF-2
+PQ0009,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0010,Service: reverse pickup,yes,DWM-2
+PQ0013,item cannot be returned,yes,RET-4
+PQ0014,Duration: 10 days,yes,RET-2
+PQ0015,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0019,Date: 20 July 2026,no,none
+PQ0019,Date: 1 August 2026,yes,RET-3
+PQ0019,Policy: version 3 return policy,yes,products.csv:ELE-0017
+PQ0021,"Delivery attempts: up to 3 attempts, then RTO",yes,DEL-3
+PQ0022,Date: 17 October 2026,yes,REF-2
+PQ0022,Date: 27 October 2026,yes,REF-2
+PQ0022,Duration: 7 business days,yes,REF-2
+PQ0024,Statement: information not covered / cannot be found in documents,no,none
+PQ0025,Duration: 5 business days,yes,REF-2
+PQ0026,SKU ELE-0008,yes,products.csv:ELE-0008
+PQ0026,Duration: 6 months,yes,products.csv:ELE-0008
+PQ0027,Date: 12 October 2026,yes,REF-2
+PQ0027,Date: 15 October 2026,yes,REF-2
+PQ0027,Duration: 3 business days,yes,REF-2
+PQ0028,Date: 14 October 2026,yes,REF-2
+PQ0028,Date: 21 October 2026,yes,REF-2
+PQ0028,Duration: 5 business days,yes,REF-2
+PQ0029,Date: 12 October 2026,yes,REF-2
+PQ0029,Date: 21 October 2026,yes,REF-2
+PQ0029,Duration: 7 business days,yes,REF-2
+PQ0030,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0031,Duration: 30 minutes,yes,TRB-4
+PQ0031,Duration: 10 seconds,yes,TRB-4
+PQ0032,Yes (affirmative response),yes,products.csv:ELE-0003
+PQ0032,SKU ELE-0003,yes,products.csv:ELE-0003
+PQ0032,Policy: ZentroMart Assured,yes,products.csv:ELE-0003
+PQ0032,Procedure: claim via My Orders in app,yes,WAR-2
+PQ0033,Date: 17 October 2026,yes,REF-2
+PQ0033,Date: 24 October 2026,yes,REF-2
+PQ0033,Duration: 5 business days,yes,REF-2
+PQ0034,Policy: deliver only within India,yes,DEL-5
+PQ0035,Date: 12 October 2026,yes,REF-2
+PQ0035,Date: 17 October 2026,yes,REF-2
+PQ0035,Duration: 5 business days,yes,REF-2
+PQ0036,Statement: information not covered / cannot be found in documents,no,none
+PQ0037,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0039,item cannot be returned,yes,RET-5
+PQ0040,order cannot be cancelled after shipping,yes,FAQH-1
+PQ0040,can refuse parcel at delivery,yes,FAQH-1
+PQ0041,SKU ELE-0003,yes,products.csv:ELE-0003
+PQ0042,order cannot be cancelled after shipping,yes,CAN-2
+PQ0042,can refuse parcel at delivery,yes,CAN-2
+PQ0044,Duration: 10 days,yes,RET-2
+PQ0045,Duration: 3 business days,yes,REF-2
+PQ0046,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0047,Duration: 48 hours,yes,DEL-4
+PQ0047,Amount: ₹79,yes,DEL-4
+PQ0047,Policy: ZentroMart Plus,yes,DEL-4
+PQ0047,Policy: ZentroMart Wallet,yes,DEL-4
+PQ0048,Amount: free / waived,yes,FAQH-3
+PQ0048,Procedure: complaint with photo of item and packet within 48 hours,yes,FAQH-3
+PQ0049,Date: 15 October 2026,yes,RET-8
+PQ0049,Date: 01 October,yes,RET-8
+PQ0049,Duration: 30 days,yes,RET-8
+PQ0050,Duration: 7 business days,yes,REF-3
+PQ0050,Duration: instant / 2 hours,yes,REF-3
+PQ0050,Policy: ZentroMart Wallet,yes,REF-3
+PQ0052,Date: 17 October 2026,yes,REF-2
+PQ0052,Date: 24 October 2026,yes,REF-2
+PQ0053,Statement: information not covered / cannot be found in documents,yes,none (unanswerable fallback)
+PQ0054,Date: 15 October 2026,yes,RET-8
+PQ0054,Date: 01 October,yes,RET-8
+PQ0054,Duration: 30 days,yes,RET-8
+PQ0056,Date: 5 October 2026,yes,RET-8
+PQ0056,Duration: 30 days,yes,RET-8
+PQ0057,Date: 1 August 2026,yes,RET-3
+PQ0057,Duration: 7 days,yes,RET-3
+PQ0057,Policy: version 3 return policy,yes,RET-3
+PQ0058,Date: 1 August 2026,yes,RET-3
+PQ0058,Duration: 7 days,yes,RET-3
+PQ0059,Date: 17 October 2026,yes,REF-2
+PQ0059,Date: 22 October 2026,yes,REF-2
+PQ0059,Duration: 3 business days,yes,REF-2

@@ -1,0 +1,4 @@
+- **Fix 1 (KEEP-PENDING)**: Category expansion improves Recall@5 from 58.70% to 63.77% and reduces unanswerable fallbacks from 4 to 1 on DEV; decision accuracy holds at 23/26, but pending SKU guard verification to prevent spurious multi-variant ranking.
+- **Fix 4 (UNMEASURED)**: Warranty duration prompt guidance could not be measured in Phase 2E isolation due to 429 quota exhaustion on Run C (only rows 1-5 completed).
+- **Fix 5 (RETRIEVAL GAIN ONLY)**: ASR alphanumeric normalisation raises DEV ASR SKU retrieval from 54.55% to 90.91% and Recall@5 from 42.03% to 55.07% offline, but end-to-end generation could not be evaluated due to 429 quota exhaustion.
+- **Fix 6 (DROPPED on evidence from combined run)**: Dropped based on Phase 2D combined run evidence where timeline ranges introduced exact-match failures on dates; isolated evaluation was NOT RUN (429).
