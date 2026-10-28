@@ -1,0 +1,36 @@
+# Spoken-form test cases derived from real customer audio transcripts
+# Format: raw_spoken_input -> expected_normalised_output
+
+# 1. Order ID digits (Clip 01)
+six nine five two zero eight six seven -> 69520867
+
+# 2. Pincode digits (Clip 01)
+one six zero zero one seven -> 160017
+
+# 3. Spoken date and two-digit year (Clip 06)
+seventeen october twenty six -> 17 October 2026
+
+# 4. SKU alphanumeric code (Clip 05)
+ele zero zero one two -> ELE-0012
+
+# 5. Product model / name (Clip 04)
+a five rule notebook -> A5 Ruled Notebook
+
+# 6. Currency amounts (Clip 02)
+five hundred rupees -> 500 rupees
+
+# 7. Brand / policy phonetics (Clip 05)
+# UNCONFIRMED: expected output depends on customer script not yet confirmed
+zentomart issued -> ZentroMart Assured
+
+# 8. Hinglish phonetic normalisation (Clip 04)
+# UNCONFIRMED: expected output depends on customer script not yet confirmed
+lutane -> lautane
+
+# 9. Hinglish auxiliary normalisation (Clip 05)
+# UNCONFIRMED: expected output depends on customer script not yet confirmed
+he kya -> hai kya
+
+# 10. Hinglish phonetic variant (Clip 06)
+# UNCONFIRMED: expected output depends on customer script not yet confirmed
+credit card vaala -> credit card wala
