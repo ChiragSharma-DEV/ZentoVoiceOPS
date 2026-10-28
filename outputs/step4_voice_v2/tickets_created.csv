@@ -1,0 +1,2 @@
+ticket_id,created_at,order_id,intent,reason,summary
+TKT39ab8373e9824e8a81aa41d8fb3af36f,2026-10-27T18:58:19,66492475,handoff,human_requested,Verified caller on order 66492475; customer reports issue: 'hello i want to talk to a human agent'; checks completed; escalated to Priority Resolution team per policy human_requested.
